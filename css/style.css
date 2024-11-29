@@ -19,7 +19,6 @@ body {
 .container {
     min-width: 330px;
     width: 30%;
-    background-color: blue;
     border-radius: 10px;
     box-shadow: 0px 1px 10px black;
 }
@@ -53,6 +52,7 @@ img {
     padding: 47px 0px;
     background-color: #3498db;
     border-radius: 10px 10px 0px 0px;
+    transition: .3s;
 }
 
 .personalInformation {
@@ -64,6 +64,7 @@ img {
     font-size: 23px;
     font-weight: 700;
     color: #3498db;
+    transition: .3s;
 }
 
 #profession {
@@ -102,6 +103,7 @@ img {
 
 #followingText, #followersText {
     color: #3498db;
+    transition: .3s;
 }
 
 .colors {
