@@ -10,19 +10,25 @@
 </head>
 <body>
     <div class="container">
+        <div class="imageAndBackground">
+            <img src="../assets/images/profile1.jpg">
+        </div>
         <div id="target" class="target">
             <div class="personalInformation">
-                <img src="../assets/images/profile1.jpg">
                 <p id="personalName">Edwin Peña</p>
-                <p>Junior Web Developer</p>
+                <p id="profession">Junior Web Developer</p>
             </div>
 
             <div class="followingAndFollowers">
-                <p>0.00K</p>
-                <p id="followingText">Following</p>
+                <div class="following">
+                    <p class="followindAndFollowersValue">115</p>
+                    <p id="followingText">Following</p>
+                </div>
 
-                <p>0.00K</p>
-                <p id="followersText">Followers</p>
+                <div class="followers">
+                    <p class="followindAndFollowersValue">107</p>
+                    <p id="followersText">Followers</p>
+                </div>
             </div>
 
             <div class="followAndMessage">
@@ -30,14 +36,14 @@
                 <button id="btnMessage">Message</button>
             </div>
         </div>
+    </div>
 
-        <div class="colors">
-            <button id="btnBlue" onclick="changeColor('#3498db')">Blue</button>
-            <button id="btnRed" onclick="changeColor('#ff1756')">Red</button>
-            <button id="btnGreen" onclick="changeColor('#1cb65d')">Green</button>
-            <button id="btnPurple" onclick="changeColor('#8e44ad')">Purple</button>
-            <button id="btnYellow" onclick="changeColor('#f4b932')">Yellow</button>
-        </div>
+    <div class="colors">
+        <button id="btnBlue" onclick="changeColor('#3498db')"></button>
+        <button id="btnRed" onclick="changeColor('#ff1756')"></button>
+        <button id="btnGreen" onclick="changeColor('#1cb65d')"></button>
+        <button id="btnPurple" onclick="changeColor('#8e44ad')"></button>
+        <button id="btnYellow" onclick="changeColor('#f4b932')"></button>
     </div>
 </body>
 </html>

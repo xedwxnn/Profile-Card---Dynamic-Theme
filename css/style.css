@@ -7,3 +7,178 @@
     font-family: "Beiruti", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    min-width: 330px;
+    width: 30%;
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px black;
+}
+
+.target {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 0px;
+    width: 100%;
+    height: 320px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 90px;
+    border: 6px solid white;
+}
+
+.imageAndBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 47px 0px;
+    background-color: #3498db;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.personalInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #3498db;
+}
+
+#profession {
+    color: rgba(145, 145, 145);
+    font-weight: 600;
+}
+
+.followingAndFollowers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 22px;
+}
+
+.followindAndFollowersValue {
+    font-size: 30px;
+}
+
+.following {
+    margin-left: 50px;
+}
+
+.followers {
+    margin-right: 50px;
+}
+
+.following, .followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+#followingText, #followersText {
+    color: #3498db;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 330px;
+    width: 30%;
+    height: 75px;
+    padding: 30px 0px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px black;
+}
+
+.colors button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    border: 2.5px solid rgba(245, 245, 245, .6);
+    margin: 0px 10px;
+}
+
+.colors button:hover {
+    cursor: pointer;
+}
+
+#btnBlue {
+    background-color: #3498db;
+}
+
+#btnRed {
+    background-color: #ff1756;
+}
+
+#btnGreen {
+    background-color: #1cb65d;
+}
+
+#btnPurple {
+    background-color: #8e44ad;
+}
+
+#btnYellow {
+    background-color: #f4b932;
+}
+
+.followAndMessage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#btnFollow, #btnMessage {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+#btnFollow:hover, #btnMessage:hover {
+    cursor: pointer;
+}
+
+#btnFollow {
+    margin-left: 25px;
+    background-color: #3498db;
+    color: white;
+}
+
+#btnMessage {
+    margin-right: 25px;
+    color: #3498db;
+    border: 3.5px solid #3498db;
+}
