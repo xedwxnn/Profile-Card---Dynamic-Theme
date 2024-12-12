@@ -8,12 +8,20 @@
     <link rel="icon" href="../assets/icon/icon.png">
     <script src="../scripts/main.js" defer></script>
 </head>
+
+<header>
+    <nav>
+        <img id="darkIcon" class="DarkLightIcon" src="../assets/icons/moon-icon.png" alt="Change to Dark Theme">
+        <img id="lightIcon" class="DarkLightIcon" src="../assets/icons/sun-icon.png" alt="Change to Light Theme">
+    </nav>
+</header>
+
 <body>
     <div class="container">
         <div id="imgBg" class="imageAndBackground">
-            <img src="../assets/images/profile1.jpg">
+            <img id="imgProfile" src="../assets/images/profile1.jpg">
         </div>
-        <div id="target" class="target">
+        <div id="target" class="target colorDarkLightBg">
             <div class="personalInformation">
                 <p id="personalName" class="elementToChangeColor">Edwin Peña</p>
                 <p id="profession">Junior Web Developer</p>
@@ -21,12 +29,12 @@
 
             <div class="followingAndFollowers">
                 <div class="following">
-                    <p class="followindAndFollowersValue">115</p>
+                    <p id="followingNumber" class="followindAndFollowersValue colorDarkLightTxt">115</p>
                     <p id="followingText" class="elementToChangeColor">Following</p>
                 </div>
 
                 <div class="followers">
-                    <p class="followindAndFollowersValue">107</p>
+                    <p id="followersNumber" class="followindAndFollowersValue colorDarkLightTxt">107</p>
                     <p id="followersText" class="elementToChangeColor">Followers</p>
                 </div>
             </div>
@@ -38,7 +46,7 @@
         </div>
     </div>
 
-    <div class="colors">
+    <div id="colors" class="colors colorDarkLightBg">
         <button id="btnBlue" class="colorsBtn active"></button>
         <button id="btnRed" class="colorsBtn"></button>
         <button id="btnGreen" class="colorsBtn"></button>
