@@ -215,10 +215,6 @@ body {
     color: white;
 }
 
-.following.active {
-    background-color: transparent;
-}
-
 #btnMessage {
     margin-right: 25px;
     color: #3498db;
