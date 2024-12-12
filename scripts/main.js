@@ -6,11 +6,14 @@ const btn4 = document.getElementById('btnPurple');
 const btn5 = document.getElementById('btnYellow');
 const darkBtn = document.getElementById('darkIcon');
 const lightBtn = document.getElementById('lightIcon');
+const btnFollow = document.getElementById('btnFollow');
 const followingN = document.getElementById('followingNumber');
 const followersN = document.getElementById('followersNumber');
 const colors = document.getElementById('colors');
 const target = document.getElementById('target');
 const imgProfile = document.getElementById('imgProfile');
+
+let followCurrentC;
 
 setTimeout(() => {
     body.style.opacity = '1';
@@ -19,7 +22,6 @@ setTimeout(() => {
 function changeTheme(color, activeButton) {
     const elements = document.querySelectorAll('.elementToChangeColor');
     const bg = document.getElementById('imgBg');
-    const btnFollow = document.getElementById('btnFollow');
     const btnMessage = document.getElementById('btnMessage');
 
     elements.forEach(function(element) {
@@ -27,10 +29,12 @@ function changeTheme(color, activeButton) {
     });
 
     bg.style.backgroundColor = color;
+    btnFollow.style.borderColor = color;
     btnFollow.style.backgroundColor = color;
     btnMessage.style.borderColor = color;
 
     const elementsBtn = document.querySelectorAll('.colorsBtn');
+
     elementsBtn.forEach(function(btn) {
         btn.classList.remove('active');
         btn.style.boxShadow = 'none';
@@ -40,8 +44,18 @@ function changeTheme(color, activeButton) {
     activeButton.style.boxShadow = `0px 0px 10px 4px ${color}`;
 }
 
+function followStatus() {
+    if(btnFollow.innerText === 'Follow') {
+        btnFollow.innerText = 'Following';
+    }
+    
+    else {
+        btnFollow.innerText = 'Follow';
+    }
+}
+
 function changeThemeBlackWhite() {
-    if(getComputedStyle(darkBtn).display === 'flex') {
+    if (getComputedStyle(darkBtn).display === 'flex') {
         body.style.backgroundColor = 'rgb(20, 20, 20)';
         target.style.backgroundColor = 'rgb(25, 25, 25)';
         imgProfile.style.borderColor = 'rgb(25, 25, 25)';
@@ -71,5 +85,7 @@ btn2.addEventListener('click', () => changeTheme('#ff1756', btn2));
 btn3.addEventListener('click', () => changeTheme('#1cb65d', btn3));
 btn4.addEventListener('click', () => changeTheme('#8e44ad', btn4));
 btn5.addEventListener('click', () => changeTheme('#f4b932', btn5));
+
+btnFollow.addEventListener('click', followStatus);
 darkBtn.addEventListener('click', changeThemeBlackWhite);
 lightBtn.addEventListener('click', changeThemeBlackWhite);

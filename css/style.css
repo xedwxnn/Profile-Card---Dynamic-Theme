@@ -211,7 +211,12 @@ body {
 #btnFollow {
     margin-left: 25px;
     background-color: #3498db;
+    border: 3.5px solid #3498db;
     color: white;
+}
+
+.following.active {
+    background-color: transparent;
 }
 
 #btnMessage {
