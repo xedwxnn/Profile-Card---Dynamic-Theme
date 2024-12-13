@@ -45,10 +45,11 @@ function changeTheme(color, activeButton) {
 }
 
 function changeThemeBlackWhite() {
-    if (getComputedStyle(darkBtn).display === 'flex') {
-        body.style.backgroundColor = 'rgb(20, 20, 20)';
+    if(getComputedStyle(darkBtn).display === 'flex') {
+        body.style.backgroundColor = 'rgb(15, 15, 15)';
         target.style.backgroundColor = 'rgb(25, 25, 25)';
         imgProfile.style.borderColor = 'rgb(25, 25, 25)';
+        btnFollow.style.color = 'rgb(25, 25, 25)';
         followingN.style.color = 'white';
         followersN.style.color = 'white';
         colors.style.backgroundColor = 'rgb(25, 25, 25)';
@@ -61,6 +62,7 @@ function changeThemeBlackWhite() {
         body.style.backgroundColor = 'white';
         target.style.backgroundColor = 'white';
         imgProfile.style.borderColor = 'white';
+        btnFollow.style.color = 'white';
         followingN.style.color = 'black';
         followersN.style.color = 'black';
         colors.style.backgroundColor = 'white';
