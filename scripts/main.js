@@ -44,16 +44,6 @@ function changeTheme(color, activeButton) {
     activeButton.style.boxShadow = `0px 0px 10px 4px ${color}`;
 }
 
-function followStatus() {
-    if(btnFollow.innerText === 'Follow') {
-        btnFollow.innerText = 'Following';
-    }
-    
-    else {
-        btnFollow.innerText = 'Follow';
-    }
-}
-
 function changeThemeBlackWhite() {
     if (getComputedStyle(darkBtn).display === 'flex') {
         body.style.backgroundColor = 'rgb(20, 20, 20)';
@@ -86,6 +76,5 @@ btn3.addEventListener('click', () => changeTheme('#1cb65d', btn3));
 btn4.addEventListener('click', () => changeTheme('#8e44ad', btn4));
 btn5.addEventListener('click', () => changeTheme('#f4b932', btn5));
 
-btnFollow.addEventListener('click', followStatus);
 darkBtn.addEventListener('click', changeThemeBlackWhite);
 lightBtn.addEventListener('click', changeThemeBlackWhite);
